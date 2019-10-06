@@ -50,3 +50,18 @@ console.log(lilei.height);
  *  (3)然后执行函数体内部的属性赋值操作，将name，sex，age，height的值赋值给该内存的this属性
  *  (4)最后函数执行完毕，返回该内存空间，相当于返回了this，这块内存空间是该Person2构造函数的一个实例（lilei就是Person2的一个实例）
  */
+
+let hmm = new Person2("韩梅梅", "女", 17, '160cm');
+console.log(hmm.name);
+console.log(hmm.sex);
+console.log(hmm.age);
+console.log(hmm.height);
+// 此时创建了一个新内存空间，标签为hmm，这个标签指向的是Person2的实例，默认返回的也是名为hmm的内存空间
+/**
+ * 4.构造函数的返回值
+ */
+
+//  (1) 默认返回this,指向new构造函数创建的内存空间
+// （2）可以进行手动更改返回值
+    // ① 手动返回值更改为原始类型（primitive）: boolean，undefined，null，number，symbol，string
+    // ② 手动返回值更改为引用类型: Array，Object，Function

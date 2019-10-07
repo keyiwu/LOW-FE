@@ -63,5 +63,28 @@ console.log(hmm.height);
 
 //  (1) 默认返回this,指向new构造函数创建的内存空间
 // （2）可以进行手动更改返回值
-    // ① 手动返回值更改为原始类型（primitive）: boolean，undefined，null，number，symbol，string
-    // ② 手动返回值更改为引用类型: Array，Object，Function
+// 构造函数如果返回值为对象，那么这个返回值会被正常使用
+//  返回原始值,不起作用
+// ① 手动返回值更改为原始类型（primitive）: boolean，undefined，null，number，symbol，string
+// ② 手动返回值更改为引用类型: Array，Object，Function
+// 返回值为boolean
+let Tea = function (name) {
+  this.name = name;
+  console.log('THIS', this);
+  return true;
+}
+let GreenTea = new Tea('green');
+console.log(GreenTea.name);
+console.log(GreenTea);
+let Water = function (fromArea) {
+  this.fromArea = fromArea;
+  console.log(this);
+  return {
+    fromArea: "changjiang"
+  }
+}
+let huangHe = new Water('huanghe');
+// console.log(huangHe);
+console.log(Water());
+console.log(huangHe.fromArea);
+

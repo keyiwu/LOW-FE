@@ -1,0 +1,17 @@
+1.vue双向数据绑定的原理，怎么理解mvvm模式
+2.css加载的权重
+3.浏览器加载页面的UI进程是什么样的
+4.map的原理及作用
+5.App首页加载时间的检测
+6.针对少数机型出现首屏白屏效果，怎么处理
+7.vue的非父子组件怎么通信
+8.webpack的作用
+9.你怎么理解vue是渐进式框架的
+10.vue的computed和watch的区别
+11.vue的data的数据发生了改变你，怎么通知vux
+12.针对性能优化，你还做了什么
+13.为什么App中使用了indexDB而不是localstroage，indexDB有什么区别
+14.[]==![],[]==[],null==undefined?,请说明理由
+15.css动画怎么让其停下来
+16.针对数组的break操作，除了for循环还有什么
+17.你怎么理解http1.x,http2,http3，各有什么优缺点
